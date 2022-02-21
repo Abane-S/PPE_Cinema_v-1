@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap');
 
+:root {
+    --color-background-color: #3a4750;
+    --color-text-color: white;
+    --color-border-color: #d81f26;
+    --color-hover-color: #ff0008;
+    --color-select-color: #7a7a7a;
+}
+
 
 html {
-    background-color: #3a4750;
+    background-color: var(--color-background-color);
     font-size: 65.2%;
     scroll-behavior: smooth;
 }
@@ -10,35 +18,39 @@ html {
 body {
     font: 1.6rem 'Roboto', sans-serif;
     font-weight: bold;
-    color: white;
+    color: var(--color-text-color);
 }
-.image{
+
+.image {
     width: 14rem;
     float: left;
     margin: 4rem;
 }
+
 header h1 {
     padding: 2.5rem;
     border-radius: 2rem;
     text-align: center;
     font-size: 5rem;
-    background-color: #d81f26;
-    color: #fff;
+    background-color: var(--color-border-color);
+    color: var(--color-text-color);
     border: 0.5rem solid #3a47504d;
-    text-shadow:#3a4750 5px 5px;
+    text-shadow: #3a4750 5px 5px;
     max-width: 100rem;
     margin: 0 auto;
 }
+
 main section h2 {
     text-align: center;
     margin: 4rem;
 }
+
 main section h2 a {
-    color: white;
+    color: var(--color-text-color);
 }
 
 main section h2 a:hover {
-    color: #d81f26;
+    color: var(--color-hover-color);
 }
 
 #container {
@@ -47,7 +59,7 @@ main section h2 a:hover {
     grid-gap: 2.5rem;
     margin: 0rem 10rem;
     padding: 2.5rem;
-    background-color: #d81f26;
+    background-color: var(--color-border-color);
     border-radius: 1rem;
 }
 
@@ -56,94 +68,67 @@ main section ul li img {
     width: 100%;
     border-radius: 0.5rem;
 }
-main section ul li img:hover{
+
+main section ul li img:hover {
     transform: scale(1.03);
     transition: 0.5s;
-    box-shadow: 0rem 0rem 0.5rem 0.5rem #5f1c1e;
+    box-shadow: 0rem 0rem 0.5rem 0.5rem var(--color-hover-color);
 }
-.titre{
+
+.titre {
     text-align: center;
 }
-form{
+
+form {
     width: 80%;
     margin: 2rem auto;
 }
-.formulaire{
+
+.formulaire {
     display: flex;
     flex-direction: column;
 }
-input, label, select{
-    width: 50%;
-    margin: 1rem auto;
+
+label {
+    margin: 1rem 29rem;
 }
-input, select{
+
+input {
+    width: 50%;
+    margin: 0rem auto;
+    margin-bottom: 2rem;
+}
+
+input,
+select {
     height: 5rem;
     border-radius: 1rem;
+    padding-left: 1rem;
 }
-select{
-    color: black;
+
+select {
+    width: 50%;
+    margin: 0rem auto;
+    /* color: black; */
     background-color: white;
+    margin-bottom: 2rem;
 }
-.button{
+
+#ville, #pays {
+    color: var(--color-select-color);
+}
+
+.button {
     margin: 5rem auto;
     width: 30%;
 }
-form h3{
+
+form h3 {
     font-size: 3rem;
     margin: 5rem auto;
 }
-footer{
+
+footer {
     text-align: center;
+    cursor: cell;
 }
-/* Responsive */ 
-@media screen and (max-width: 90rem){
-        header{
-            display: block;
-        }
-        header h1{
-            font-size: 2.5rem
-        }
-        header img{
-            display: block;
-            margin: 0 auto;
-            transform: none;
-            max-width: 10rem;
-        }
-    }
-@media screen and (max-width: 20rem){
-        header{
-            font-size:small ;
-        }
-        section h2{
-            font-size: 2.5rem
-        }
-}
-    
-
-
-
-/* 
-    header{
-        display: block;
-    }
-    header h1{
-        font-size: 2.5rem;
-    }
-    header img{
-        display: block;
-        margin: 5rem auto;
-        max-width: 10rem;
-        transform: none;
-    }
-    header nav{
-        position: absolute;
-        top: 2%;
-        left: 82%;
-    }
-    body{
-        padding: 1rem;
-    }
-    section ul{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    } */

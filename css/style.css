@@ -2,9 +2,17 @@
 
 /* https://www.csscolorpalettes.com/palettes/320#palette */
 
+:root {
+    --color-background-color: #3a4750;
+    --color-text-color: white;
+    --color-shadow-color: #3a4750;
+    --color-border-color: #d81f26;
+    --color-boder-color-title: #3a47504d;
+    --color-hover-color: #ff0008;
+}
 
 html {
-    background-color: #3a4750;
+    background-color: var(--color-background-color);
     scroll-behavior: smooth;
     font-size: 62.5%;
 
@@ -13,21 +21,27 @@ body{
     font: 1.6rem 'Roboto', sans-serif;
     font-weight: bold; 
 }
+header{
+    width: 100%;
+}
 .image{
+    display: block;
     width: 14rem;
     float: left;
     margin: 4rem;
 }
 header h1 {
+    display: block;
     padding: 2.5rem;
     border-radius: 2rem;
     text-align: center;
     font-size: 5rem;
-    background-color: #d81f26;
-    color: #fff;
-    border: 0.5rem solid #3a47504d;
-    text-shadow:#3a4750 5px 5px;
+    background-color: var(--color-border-color);
+    color: var(--color-text-color);
+    border: 0.5rem solid var(--color-boder-color-title);
+    text-shadow:var(--color-background-color) 5px 5px;
     max-width: 100rem;
+    
     margin: 0 auto;
 }
 
@@ -35,14 +49,14 @@ main section h2 {
     text-align: center;
     line-height: 3.5rem;
     margin-top: 3rem;
-    color: #fff;
+    color: var(--color-text-color);
     font-size: 3rem;
 }
 main section h3{
     text-align: center;
     margin: 4rem auto 3rem;
     line-height: 2.5rem;
-    color: #fff;
+    color: var(--color-text-color);
     text-transform: uppercase;
 }
 #container {
@@ -51,7 +65,7 @@ main section h3{
     margin: 0rem 10rem;
     grid-template-columns: repeat(4,1fr);    /* 4 colonnes dans (une fraction = ( ligne)) */
     grid-gap: 2.5rem;
-    background-color: #d81f26;
+    background-color: var(--color-border-color);
     border-radius: 1rem;
 }
 main section ul li img {
@@ -62,7 +76,7 @@ main section ul li img {
 main section ul li img:hover{
     transform: scale(1.03);
     transition: 0.5s;
-    box-shadow: 0rem 0rem 0.5rem 0.5rem #5f1c1e;
+    box-shadow: 0rem 0rem 0.5rem 0.5rem var(--color-hover-color);
 }
 nav {
     margin-top: 3rem;
@@ -71,17 +85,17 @@ nav {
 nav a {
     color: #fff;
     line-height: 7.5rem;
-    background-color: #d81f26;
+    background-color: var(--color-border-color);
     padding: 1rem;
     border-radius: 0.5rem; 
 }
 nav a:hover{
-    background-color: #ff0008;
+    background-color: var(--color-hover-color);
 }
 footer {
     font-size: 1.2rem;
     line-height: 1.6rem;
-    color:  #fff;
+    color:var(--color-text-color);
     margin: 0 auto;
     text-align: center;
     margin-top: 2rem;
