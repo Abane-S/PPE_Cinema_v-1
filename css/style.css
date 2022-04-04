@@ -31,11 +31,11 @@ header{
     justify-content: space-around;
     align-items: center;
     padding-top: 2.5rem;
-    margin-right: 10rem;
+    margin-right: 9rem;
 }
 header img{
-    max-width: 15rem;
-    margin-top: 3rem;
+    max-width: 13rem;
+
 }
 header h1{
     font-size: 5rem;
@@ -101,7 +101,7 @@ main ul li img{
     background-color: var(--Fourth);
     transition: all 0.3s ease-in;
 }
-.light main h2:first-child, .light main h3:first-of-type{
+.light main h2, .light main h3:first-of-type{
     color: var(--Primary);
 }
 .light header h1{
@@ -163,7 +163,7 @@ ul figure:hover figcaption{
     transition: all 0.4s ease-in-out;
 }
 .parent-modale .modale{
-    width: 39rem;
+    width: 34rem;
     padding: 1rem;
     position: fixed;
     top: 50%;
@@ -236,43 +236,50 @@ footer p {
 
 
 /* Responsive */
-
-@media screen and (max-width: 85rem){
-    header img{
-        margin: 0 auto 0rem 3rem;
+@media screen and (max-width: 80rem){
+    header{
+        margin-right: 0rem;
     }
     header h1{
-        text-align: center;
-        margin-left: 5rem;
-        margin-right: 5rem;
+        font-size: 3rem;
     }
-
+    header span{
+        margin: 0rem 2rem;
+    }
     main .grid-picture-large{
         display: grid;
         grid-template-columns: repeat(3,1fr);
+        margin: 0 2rem;
     }
 }
-@media screen and (max-width: 64rem) {
+@media screen and (max-width: 60rem) {
     header{
         display: block;
-        margin-top: 4rem;
-        margin-right: -10rem;
     }
     header img{
         display: block;
         margin: 0rem auto;
     }
     header h1{
-        font-size: 3rem;
-        margin: 2.5rem auto;
+        margin: 2.5rem ;
     }
-    header span{
-        margin: 2.5 auto;
+    main h3:first-of-type{
+        text-transform: none;
+    }
+    .material-icons.md-48{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
     }
 }
+
+
 @media screen and (max-width: 45rem) {
     main .grid-picture-large{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 1.5rem
     }
 }
