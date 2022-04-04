@@ -5,6 +5,7 @@
     --Primary: #3a4750;
     --Secondary: #ff0008;
     --Tertiary: #d81f26;
+    --Fourth: #d3d6db;
     --White: white;
     --Default: #3a47504d;
 }
@@ -22,13 +23,14 @@ body {
 
 /* HEADER */
 header{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2.5rem;
+    margin-right: 9rem;
 }
 header img{
-    min-width: 15rem;
-    margin-left: 5rem;
+    max-width: 15rem;
     margin-top: 3rem;
 }
 header h1{
@@ -40,8 +42,13 @@ header h1{
     text-shadow: var(--Primary) 5px 5px;
     background-color: var(--Tertiary);  
     text-align: center;
-    grid-column: 2/6;
 }
+.material-icons.md-48{
+    cursor: pointer;
+    font-size: 48px;
+    margin-right: -rem;
+}
+
 
 /* MAIN */
 main h2, main a{
@@ -50,10 +57,6 @@ main h2, main a{
     color: var(--White);
     font-size: 3rem;
 }
-main h2 a:hover{
-    color: var(--Secondary);
-}
-
 main .grid-picture-large {
     display: grid;
     padding: 2.5rem;
@@ -70,6 +73,7 @@ main ul li img{
     border-radius: 0.5rem;
 }
 
+
 /* scroll bars */
 *{
     scrollbar-width: thin;
@@ -82,13 +86,44 @@ main ul li img{
     background-color: rgb(255, 0, 0);
 }
 
+
+/* light_mode */
+.light{
+    background-color: var(--Fourth);
+    transition: all 0.3s ease-in;
+}
+.light main h2:first-child{
+    color: var(--Primary);
+}
+.light header h1{
+    color: var(--Primary);
+    background-color: var(--White);
+    text-shadow: none;
+    transition: all 0.6s ease-in;
+} 
+.light main .grid-picture-large {
+    background-color: var(--Primary);
+    transition: all 0.6s ease-in;
+}
+.light main label{
+    color: var(--Primary);
+}
+.light h3{
+    color: var(--Primary);
+}
+.light footer p{
+    color: var(--Primary);
+    background-color: var(--Fourth);
+}
+
+
+/* Overley effect */
 ul figure{
     position: relative;
 }
 ul figure .material-icons{
     vertical-align: -.4rem;
 }
-/* Overley effect */
 ul figure figcaption{
     display: grid;
     position: absolute;
@@ -212,9 +247,6 @@ input:last-of-type{
     height: 5rem;
     cursor: pointer;
 }
-input[type="submit"]:focus{
-    background-color: var(--Tertiary);
-}
 
 
 /* FOOTER */
@@ -224,7 +256,7 @@ footer p {
     margin: 0 auto;
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 6rem;
+    padding-bottom: 2rem;
 }
 /* Responsive */
 

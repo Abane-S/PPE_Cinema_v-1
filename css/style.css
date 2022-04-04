@@ -8,6 +8,7 @@
     --Primary: #3a4750;
     --Secondary: #ff0008;
     --Tertiary: #d81f26;
+    --Fourth: #d3d6db;
     --White: white;
     --Default: #3a47504d;
 }
@@ -26,13 +27,14 @@ body{
 
 /* HEADER */
 header{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2.5rem;
+    margin-right: 10rem;
 }
 header img{
-    min-width: 15rem;
-    margin-left: 5rem;
+    max-width: 15rem;
     margin-top: 3rem;
 }
 header h1{
@@ -44,7 +46,11 @@ header h1{
     text-shadow: var(--Primary) 5px 5px;
     background-color: var(--Tertiary);  
     text-align: center;
-    grid-column: 2/6;
+}
+.material-icons.md-48{
+    cursor: pointer;
+    font-size: 48px;
+    margin-right: -rem;
 }
 
 /* MAIN */
@@ -55,7 +61,7 @@ main h2 {
     color: var(--White);
     font-size: 3rem;
 }
-.first-title{
+main h3:first-of-type{
     text-align: center;
     margin: 4rem auto 3rem;
     line-height: 2.5rem;
@@ -87,6 +93,33 @@ main ul li img{
 }
 *::-webkit-scrollbar-thumb {
     background-color: rgb(255, 0, 0);
+}
+
+
+/* light_mode */
+.light{
+    background-color: var(--Fourth);
+    transition: all 0.3s ease-in;
+}
+.light main h2:first-child, .light main h3:first-of-type{
+    color: var(--Primary);
+}
+.light header h1{
+    color: var(--Primary);
+    background-color: var(--White);
+    text-shadow: none;
+    transition: all 0.6s ease-in;
+} 
+.light main .grid-picture-large {
+    background-color: var(--Primary);
+    transition: all 0.6s ease-in;
+}
+.light main a{
+    color: var(--White);
+    background-color: var(--Primary);
+}
+.light footer p{
+    color: var(--Primary);
 }
 
 
@@ -153,7 +186,7 @@ ul figure:hover figcaption{
     opacity: 1;
     transform-origin: center center;
 }
-.second-title{
+.parent-modale .modale .desc h3:last-of-type{
     text-transform: capitalize;
     font-weight: 400;
     background-color: #222;
@@ -190,9 +223,7 @@ main a{
     max-width: 30rem;
     height: 4.5rem;
 }
-main a:hover{
-    background-color: var(--Secondary);
-}
+
 
 /* FOOTER */
 footer p {
@@ -200,30 +231,43 @@ footer p {
     color:var(--White);
     margin: 0 auto;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+    padding-bottom: 2rem;
 }
 
 
 /* Responsive */
 
-@media screen and (max-width: 75rem){
-    header{
-        display: block;
-    }
+@media screen and (max-width: 85rem){
     header img{
-        display: block;
-        margin: 0 auto 2rem;
+        margin: 0 auto 0rem 3rem;
     }
     header h1{
-        font-size: 4rem;
         text-align: center;
         margin-left: 5rem;
         margin-right: 5rem;
     }
+
     main .grid-picture-large{
         display: grid;
         grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 64rem) {
+    header{
+        display: block;
+        margin-top: 4rem;
+        margin-right: -10rem;
+    }
+    header img{
+        display: block;
+        margin: 0rem auto;
+    }
+    header h1{
+        font-size: 3rem;
+        margin: 2.5rem auto;
+    }
+    header span{
+        margin: 2.5 auto;
     }
 }
 @media screen and (max-width: 45rem) {
