@@ -54,14 +54,14 @@ header h1{
 }
 
 /* MAIN */
-main h2 {
+main h2{
     text-align: center;
     line-height: 3.5rem;
     margin-top: 3rem;
     color: var(--White);
     font-size: 3rem;
 }
-main h3:first-of-type{
+main .third_title{
     text-align: center;
     margin: 4rem auto 3rem;
     line-height: 2.5rem;
@@ -101,7 +101,7 @@ main ul li img{
     background-color: var(--Fourth);
     transition: all 0.3s ease-in;
 }
-.light main h2, .light main h3:first-of-type{
+.light main .title, .light main h3:first-of-type{
     color: var(--Primary);
 }
 .light header h1{
@@ -163,7 +163,7 @@ ul figure:hover figcaption{
     transition: all 0.4s ease-in-out;
 }
 .parent-modale .modale{
-    width: 34rem;
+    width: 39rem;
     padding: 1rem;
     position: fixed;
     top: 50%;

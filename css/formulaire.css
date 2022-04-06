@@ -30,8 +30,7 @@ header{
     margin-right: 9rem;
 }
 header img{
-    max-width: 14rem;
-    margin-top: 3rem;
+    max-width: 13rem;
 }
 header h1{
     font-size: 5rem;
@@ -92,7 +91,7 @@ main ul li img{
     background-color: var(--Fourth);
     transition: all 0.3s ease-in;
 }
-.light main h2:first-child{
+.light main .title{
     color: var(--Primary);
 }
 .light header h1{
