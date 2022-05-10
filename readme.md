@@ -1,22 +1,20 @@
 # PPE Cinéma :
 
 
-↪ [Lien vers le site](https://abane1.github.io/PPE_cinema/)
+↪ [Lien vers le site](https://abane1.github.io/PPE_Cinema_v-1/)
 
-## Développement d’une page publicitaire pour une chaîne Streaming
+## Développement d’une page publicitaire pour la Maison de ligues
 
-Une Agence nous confie la réalisation d’une page publicitaire pour
-une des premières chaines de diffusion de séries et films en
-streaming sur le web. La promotion a pour but de conquérir des
-nouveaux abonnés, en proposant la diffusion de tous les classiques
-du cinéma. Pour cela nous conseille d’abord d’analyser toutes les
-fonctionnalités au travers des deux wireframes. Les spécifications
-pour le fonctionnement de chaque partie ne sont pas définies. La
-charte graphique doit être définie par vous. Pour les affiches des
-films, recherchez sur le web et faites attention aux formats d’image
-Pour commencer vous devez tout simplement mettre en place une
-structure html sémantique car le contenu de cette publication est
-destiné à tout public. Penser à produire un code optimisé pour les
+Une agence nous confie la réalisation d’une page publicitaire pour 
+la Maison de ligues sur le web. La promotion a pour but de 
+conquérir des nouveaux abonné(e)s, en proposant la diffusion de 
+toutes les compétitions sportives. Pour cela on nous a conseillé d’abord 
+d’analyser toutes les fonctionnalités au travers des deux wireframes (présent ci-dessous). 
+Les spécifications pour le fonctionnement de chaque partie ne sont 
+pas définies. Nous devions réaliser la charte graphique.
+Pour commencer nous devions tout simplement mettre en place une 
+structure html sémantique car le contenu de cette publication est 
+destiné à tout public, et penser à produire un code optimisé pour les 
 moteurs de recherche à l’indexation de l’information.
 
 ### Phases de réalisation
@@ -35,10 +33,10 @@ fonctionnalités.
 
 # Index 
 
-![site](./asset/capture_ecran/Capture%20d%E2%80%99%C3%A9cran%202022-03-23%20124138.png)
+![site](./asset/capture_ecran/Capture_ecran.png)
 
 
 
 # Formulaire
 
-![formulaire](./asset/capture_ecran/Capture%20d%E2%80%99%C3%A9cran%202022-03-23%20124222.png)
+![formulaire](./asset/capture_ecran/capture_ecran_2.png)

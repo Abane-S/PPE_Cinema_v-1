@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/formulaire.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/ico/favicon-32x32.png">
 </head>
 
 <body>
     <header>
-        <img src="./asset/netflix_official_logo_icon_168085.ico" alt="logo netflix">
+        <img src="./asset/ico/netflix_official_logo_icon_168085.ico" alt="logo netflix">
         <h1>Films, série TV et bien plus en illimité</h1>
         <span class="material-icons md-48">dark_mode</span>
     </header>
@@ -167,15 +167,15 @@
         <form action="Inscription.php" method="post" id="formulaire">
             <h3>Remplissez le formulaire</h3>
             <label for="nom">Nom </label>
-            <input type="text" placeholder="Nom" name="nom" id="nom">
+            <input type="text" placeholder="Nom" name="nom" id="nom" required>
 
             <label for="prenom">Prénom</label>
-            <input type="text" placeholder="Prénom" name="prénom" id="prenom">
+            <input type="text" placeholder="Prénom" name="prénom" id="prenom" required>
 
             <label for="email">E-mail</label>
-            <input type="text" placeholder="E-mail" name="email" id="email">
+            <input type="text" placeholder="E-mail" name="email" id="email" required>
 
-            <label for="Ville">Ville</label>
+            <label for="Ville" required>Ville</label>
             <select id="Ville" name="Ville">
                 <option value="Selelct City" id="ville">Ville</option>
                 <option value="Paris">Paris</option>
@@ -281,7 +281,7 @@
             </select>
 
 
-            <label for="Ville">Pays</label>
+            <label for="Ville" required>Pays</label>
             <select id="country" name="country">
                 <option value="Select Country" id="pays">Pays</option>
                 <option value="Afghanistan">Afghanistan</option>
@@ -526,7 +526,9 @@
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
-
+            
+<!--             <label for="sports" required>Pays</label>
+            <select id="country" name="country"> -->
             <input type="submit" value="Valider">
         </form>
     </main>
